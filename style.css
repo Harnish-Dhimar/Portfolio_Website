@@ -241,6 +241,21 @@ p{
 @media (max-width: 768px) {
   .navbar {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    padding: 10px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  #menu-icon {
+    display: block;
   }
 
   #menu-icon {
